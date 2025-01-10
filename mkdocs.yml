@@ -1,0 +1,57 @@
+site_name: The Tapestry of Possibility
+site_description: Unifying physics, AI, and modern infrastructure through tasks and constraints
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - The Four Strands:
+    - Constructor Theory & Counterfactuals: strands/constructor-theory.md
+    - Physical AI: strands/physical-ai.md
+    - Serverless & Platform: strands/serverless-and-platform.md
+    - Decentralized Finance: strands/decentralized-finance.md
+  - Guides:
+    - Getting Started: guides/getting-started.md
+    - Developer Setup: guides/developer-setup.md
+    - Advanced Topics: guides/advanced-topics.md
