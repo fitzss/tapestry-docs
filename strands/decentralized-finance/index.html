@@ -1,1020 +1,234 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="Unifying physics, AI, and modern infrastructure through tasks and constraints">
-      
-      
-      
-      
-        <link rel="prev" href="../serverless-and-platform/">
-      
-      
-        <link rel="next" href="../../guides/getting-started/">
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
-    
-    
-      
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Decentralized Finance - The Tapestry of Possibility</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
-      
-      
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
 
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">The Tapestry of Possibility</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#1-defining-decentralized-finance-defi" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="The Tapestry of Possibility" class="md-header__button md-logo" aria-label="The Tapestry of Possibility" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            The Tapestry of Possibility
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">The Four Strands</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../constructor-theory/" class="dropdown-item">Constructor Theory & Counterfactuals</a>
+</li>
+                                    
+<li>
+    <a href="../physical-ai/" class="dropdown-item">Physical AI</a>
+</li>
+                                    
+<li>
+    <a href="../serverless-and-platform/" class="dropdown-item">Serverless & Platform</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Decentralized Finance</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Examples</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../examples/walking-skeleton/" class="dropdown-item">Walking Skeleton</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Interfaces</a>
+    <ul class="dropdown-menu">
             
-              Decentralized Finance
+<li>
+    <a href="../../examples/interfaces/chat-interface/" class="dropdown-item">Chat Interface</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Components</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Robot UI</a>
+    <ul class="dropdown-menu">
             
-          </span>
+<li>
+    <a href="../../components/robot-ui/RobotCommandContext.jsx" class="dropdown-item">Command Context</a>
+</li>
+            
+<li>
+    <a href="../../components/robot-ui/RobotVisualization.jsx" class="dropdown-item">Visualization</a>
+</li>
+            
+<li>
+    <a href="../../components/robot-ui/TaskQueue.jsx" class="dropdown-item">Task Queue</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../components/validation/validation.js" class="dropdown-item">Validation</a>
+</li>
+                                    
+<li>
+    <a href="../../components/monitoring/TaskMonitor.js" class="dropdown-item">Monitoring</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Guides</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../guides/getting-started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../guides/defi-guide/" class="dropdown-item">DeFi Guide</a>
+</li>
+                                    
+<li>
+    <a href="../../guides/developer-setup/" class="dropdown-item">Developer Setup</a>
+</li>
+                                    
+<li>
+    <a href="../../guides/advanced-topics/" class="dropdown-item">Advanced Topics</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../references/" class="nav-link">References</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../serverless-and-platform/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../examples/walking-skeleton/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
         </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+
     
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
             
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="The Tapestry of Possibility" class="md-nav__button md-logo" aria-label="The Tapestry of Possibility" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
-    The Tapestry of Possibility
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    About
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            <li class="nav-item" data-bs-level="2"><a href="#1-defining-decentralized-finance-defi" class="nav-link">1. Defining Decentralized Finance (DeFi)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-  
-  <span class="md-ellipsis">
-    The Four Strands
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            The Four Strands
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+            <li class="nav-item" data-bs-level="2"><a href="#2-contractual-money-principle-programmable-currency" class="nav-link">2. Contractual Money Principle: Programmable Currency</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../constructor-theory/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Constructor Theory & Counterfactuals
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
+            <li class="nav-item" data-bs-level="2"><a href="#3-subcurrencies-local-monetary-systems" class="nav-link">3. Subcurrencies &amp; Local Monetary Systems</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../physical-ai/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Physical AI
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
+            <li class="nav-item" data-bs-level="2"><a href="#4-peer-to-peer-finance-p2pfi-models" class="nav-link">4. Peer-to-Peer Finance (P2PFi) Models</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../serverless-and-platform/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Serverless & Platform
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
+            <li class="nav-item" data-bs-level="2"><a href="#5-commodity-money-the-post-central-bank-vision" class="nav-link">5. Commodity Money &amp; The Post-Central-Bank Vision</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Decentralized Finance
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Decentralized Finance
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-defining-decentralized-finance-defi" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Defining Decentralized Finance (DeFi)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-contractual-money-principle-programmable-currency" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Contractual Money Principle: Programmable Currency
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Contractual Money Principle: Programmable Currency">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-self-sovereign-utxo-based-finance" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Self-Sovereign, UTXO-Based Finance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-subcurrencies-local-monetary-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Subcurrencies &amp; Local Monetary Systems
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-peer-to-peer-finance-p2pfi-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Peer-to-Peer Finance (P2PFi) Models
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-commodity-money-the-post-central-bank-vision" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Commodity Money &amp; The Post-Central-Bank Vision
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-resilient-community-driven-toolkit" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Resilient, Community-Driven Toolkit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-accessibility-inclusiveness" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Accessibility &amp; Inclusiveness
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-multi-layered-security-parallelism" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Multi-Layered Security &amp; Parallelism
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-core-defi-mechanics" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Core DeFi Mechanics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="9. Core DeFi Mechanics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#91-collateralized-lending-and-credit" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.1 Collateralized Lending and Credit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#92-dex-and-automated-market-maker-amm-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.2 DEX and Automated Market Maker (AMM) Models
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#93-flash-liquidity-and-instant-rebalancing" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.3 Flash Liquidity and Instant Rebalancing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#94-synthetic-assets-and-stablecoins" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.4 Synthetic Assets and Stablecoins
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#95-peer-to-peer-derivatives" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.5 Peer-to-Peer Derivatives
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#96-tokenization-of-assets" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.6 Tokenization of Assets
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#97-liquidity-and-capital-efficiency" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.7 Liquidity and Capital Efficiency
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#98-dao-driven-governance" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.8 DAO-Driven Governance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#99-security-transparency-and-automation" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.9 Security, Transparency, and Automation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
+            <li class="nav-item" data-bs-level="2"><a href="#6-resilient-community-driven-toolkit" class="nav-link">6. Resilient, Community-Driven Toolkit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            <li class="nav-item" data-bs-level="2"><a href="#7-accessibility-inclusiveness" class="nav-link">7. Accessibility &amp; Inclusiveness</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-  
-  <span class="md-ellipsis">
-    Guides
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Guides
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+            <li class="nav-item" data-bs-level="2"><a href="#8-multi-layered-security-parallelism" class="nav-link">8. Multi-Layered Security &amp; Parallelism</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guides/getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Getting Started
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
+            <li class="nav-item" data-bs-level="2"><a href="#9-core-defi-mechanics" class="nav-link">9. Core DeFi Mechanics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guides/defi-guide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DeFi Guide
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guides/developer-setup/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Developer Setup
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guides/advanced-topics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Advanced Topics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../references/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    References
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-defining-decentralized-finance-defi" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Defining Decentralized Finance (DeFi)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-contractual-money-principle-programmable-currency" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Contractual Money Principle: Programmable Currency
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Contractual Money Principle: Programmable Currency">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-self-sovereign-utxo-based-finance" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Self-Sovereign, UTXO-Based Finance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-subcurrencies-local-monetary-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Subcurrencies &amp; Local Monetary Systems
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-peer-to-peer-finance-p2pfi-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Peer-to-Peer Finance (P2PFi) Models
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-commodity-money-the-post-central-bank-vision" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Commodity Money &amp; The Post-Central-Bank Vision
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-resilient-community-driven-toolkit" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Resilient, Community-Driven Toolkit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-accessibility-inclusiveness" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Accessibility &amp; Inclusiveness
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-multi-layered-security-parallelism" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Multi-Layered Security &amp; Parallelism
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-core-defi-mechanics" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Core DeFi Mechanics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="9. Core DeFi Mechanics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#91-collateralized-lending-and-credit" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.1 Collateralized Lending and Credit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#92-dex-and-automated-market-maker-amm-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.2 DEX and Automated Market Maker (AMM) Models
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#93-flash-liquidity-and-instant-rebalancing" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.3 Flash Liquidity and Instant Rebalancing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#94-synthetic-assets-and-stablecoins" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.4 Synthetic Assets and Stablecoins
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#95-peer-to-peer-derivatives" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.5 Peer-to-Peer Derivatives
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#96-tokenization-of-assets" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.6 Tokenization of Assets
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#97-liquidity-and-capital-efficiency" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.7 Liquidity and Capital Efficiency
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#98-dao-driven-governance" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.8 DAO-Driven Governance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#99-security-transparency-and-automation" class="md-nav__link">
-    <span class="md-ellipsis">
-      9.9 Security, Transparency, and Automation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  <h1>Decentralized Finance</h1>
+            <li class="nav-item" data-bs-level="2"><a href="#10-conclusion" class="nav-link">10. Conclusion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
 <p>v# A Comprehensive Explanation of the Decentralized Finance (DeFi) Strand</p>
 <p>Below is a <strong>comprehensive, all-encompassing</strong> overview of the <strong>Decentralized Finance (DeFi) strand</strong>, integrating <strong>direct quotes</strong> from the provided passages. We explore how on-chain applications, contractual money, and peer-to-peer financial systems collectively reshape finance by prioritizing openness, self-sovereignty, and robust alternatives to centralized monetary mechanisms.</p>
 <hr />
-<h2 id="1-defining-decentralized-finance-defi">1. Defining Decentralized Finance (DeFi)<a class="headerlink" href="#1-defining-decentralized-finance-defi" title="Permanent link">&para;</a></h2>
+<h2 id="1-defining-decentralized-finance-defi">1. Defining Decentralized Finance (DeFi)</h2>
 <blockquote>
 <p>“Decentralized Finance (DeFi) Fundamentals: Encompasses on-chain applications that facilitate financial services (lending, exchanges, derivatives, and tokenization) in a trust-minimized manner. Aims to replace or augment traditional financial intermediaries with programmatic, transparent systems on a blockchain.”</p>
 </blockquote>
@@ -1025,7 +239,7 @@
 <li>Foster innovation in financial products (derivatives, stablecoins, synthetic assets) without being bottlenecked by legacy intermediaries.</li>
 </ul>
 <hr />
-<h2 id="2-contractual-money-principle-programmable-currency">2. Contractual Money Principle: Programmable Currency<a class="headerlink" href="#2-contractual-money-principle-programmable-currency" title="Permanent link">&para;</a></h2>
+<h2 id="2-contractual-money-principle-programmable-currency">2. Contractual Money Principle: Programmable Currency</h2>
 <blockquote>
 <p>“Money can be defined and enforced by on-chain ‘contracts’ rather than solely by external authorities. Properties like unit-of-account or store-of-value become programmable rules, allowing currency features to evolve over time or according to specific conditions.”</p>
 </blockquote>
@@ -1034,7 +248,7 @@
 <li><strong>Customizable monetary attributes</strong>: e.g., demurrage (time-based fees), inflation schedules, or pegged exchange rates—any condition coded in the contract.</li>
 <li><strong>Adaptive currency</strong>: currency features can update with new constraints or oracles (like external price feeds), letting money adapt to economic or technological contexts.</li>
 </ul>
-<h3 id="21-self-sovereign-utxo-based-finance">2.1 Self-Sovereign, UTXO-Based Finance<a class="headerlink" href="#21-self-sovereign-utxo-based-finance" title="Permanent link">&para;</a></h3>
+<h3 id="21-self-sovereign-utxo-based-finance">2.1 Self-Sovereign, UTXO-Based Finance</h3>
 <blockquote>
 <p>“Each participant effectively holds ‘boxes’ (unspent outputs) that can encapsulate custom logic or conditions. Instead of one central contract, multiple boxes can represent portions of a decentralized system—empowering peer-to-peer (P2P) interactions without a single bottleneck.”</p>
 </blockquote>
@@ -1044,7 +258,7 @@
 <li><strong>Peer-to-peer finance</strong>: each user’s “box” is self-contained, letting participants directly manage their portion of any DeFi protocol—no single stateful contract is essential.</li>
 </ul>
 <hr />
-<h2 id="3-subcurrencies-local-monetary-systems">3. Subcurrencies &amp; Local Monetary Systems<a class="headerlink" href="#3-subcurrencies-local-monetary-systems" title="Permanent link">&para;</a></h2>
+<h2 id="3-subcurrencies-local-monetary-systems">3. Subcurrencies &amp; Local Monetary Systems</h2>
 <blockquote>
 <p>“The platform makes it possible to create smaller ‘subcurrencies,’ each with unique contract rules—like local exchange systems or custom tokens. These specialized currencies still reside under the same umbrella, fostering coexistence without necessitating a one-size-fits-all approach.”</p>
 </blockquote>
@@ -1055,7 +269,7 @@
 <li><strong>Coexistence</strong> on the same ledger: Different subcurrencies can run in parallel on one chain, each abiding by unique contract constraints.</li>
 </ul>
 <hr />
-<h2 id="4-peer-to-peer-finance-p2pfi-models">4. Peer-to-Peer Finance (P2PFi) Models<a class="headerlink" href="#4-peer-to-peer-finance-p2pfi-models" title="Permanent link">&para;</a></h2>
+<h2 id="4-peer-to-peer-finance-p2pfi-models">4. Peer-to-Peer Finance (P2PFi) Models</h2>
 <blockquote>
 <p>“Financial tools can be built so every participant directly manages their own boxes or contracts, minimizing reliance on a central contract’s state. This approach enables mass parallelism and true self-sovereignty, as each user’s portion of the protocol is separate yet compatible with others.”</p>
 </blockquote>
@@ -1065,7 +279,7 @@
 <li><strong>Enhanced parallelism</strong>: Because tasks do not funnel into a single state, network congestion or a popular contract’s bottleneck is avoided.</li>
 </ul>
 <hr />
-<h2 id="5-commodity-money-the-post-central-bank-vision">5. Commodity Money &amp; The Post-Central-Bank Vision<a class="headerlink" href="#5-commodity-money-the-post-central-bank-vision" title="Permanent link">&para;</a></h2>
+<h2 id="5-commodity-money-the-post-central-bank-vision">5. Commodity Money &amp; The Post-Central-Bank Vision</h2>
 <blockquote>
 <p>“The platform is framed as ‘after central banks,’ providing decentralized tools that aim to be robust alternatives to conventional monetary systems. Emphasizes the idea that if central institutions fail or neglect certain regions, communities can still establish their own viable financial ecosystems.”</p>
 </blockquote>
@@ -1076,7 +290,7 @@
 <li><strong>Inclusivity</strong>: People excluded from traditional finance can harness these protocols, which are globally accessible and typically require only a smartphone and basic connectivity.</li>
 </ol>
 <hr />
-<h2 id="6-resilient-community-driven-toolkit">6. Resilient, Community-Driven Toolkit<a class="headerlink" href="#6-resilient-community-driven-toolkit" title="Permanent link">&para;</a></h2>
+<h2 id="6-resilient-community-driven-toolkit">6. Resilient, Community-Driven Toolkit</h2>
 <blockquote>
 <p>“Multiple open, free-to-use financial contracts on the platform (like mixers, lending protocols, local exchange contracts) collectively form a ‘tool stack’ for building unstoppable and uncensorable finance. Encourages democratic participation, innovation, and the expansion of new fundraising or collaborative economic models.”</p>
 </blockquote>
@@ -1087,7 +301,7 @@
 <li><strong>Rapid innovation</strong>: If an approach works (e.g., stablecoins, yield farming), communities can copy or fork code to incorporate improvements or new features.</li>
 </ul>
 <hr />
-<h2 id="7-accessibility-inclusiveness">7. Accessibility &amp; Inclusiveness<a class="headerlink" href="#7-accessibility-inclusiveness" title="Permanent link">&para;</a></h2>
+<h2 id="7-accessibility-inclusiveness">7. Accessibility &amp; Inclusiveness</h2>
 <blockquote>
 <p>“Seeks to reach people excluded from traditional financial systems—particularly during economic downturns—by providing globally available, decentralized solutions. The design is geared toward long-term sustainability and fairness, rather than short-term gains or control by centralized parties.”</p>
 </blockquote>
@@ -1098,7 +312,7 @@
 <li><strong>Fair issuance or governance</strong>: Some protocols distribute tokens or rewards in ways that encourage broad participation rather than profit extraction by a small set of insiders.</li>
 </ul>
 <hr />
-<h2 id="8-multi-layered-security-parallelism">8. Multi-Layered Security &amp; Parallelism<a class="headerlink" href="#8-multi-layered-security-parallelism" title="Permanent link">&para;</a></h2>
+<h2 id="8-multi-layered-security-parallelism">8. Multi-Layered Security &amp; Parallelism</h2>
 <blockquote>
 <p>“The underlying transaction model supports parallel operations in ways large account-based systems might not, potentially leading to higher throughput and fewer bottlenecks.”</p>
 </blockquote>
@@ -1108,9 +322,9 @@
 <li><strong>Stronger security</strong>: Public verifiability of all rules, plus direct self-custody of each user’s funds.</li>
 </ul>
 <hr />
-<h2 id="9-core-defi-mechanics">9. Core DeFi Mechanics<a class="headerlink" href="#9-core-defi-mechanics" title="Permanent link">&para;</a></h2>
+<h2 id="9-core-defi-mechanics">9. Core DeFi Mechanics</h2>
 <p>Beyond the philosophical impetus of <strong>“post-central-bank”</strong> finance and peer-to-peer systems, DeFi covers numerous <strong>financial primitives</strong>:</p>
-<h3 id="91-collateralized-lending-and-credit">9.1 Collateralized Lending and Credit<a class="headerlink" href="#91-collateralized-lending-and-credit" title="Permanent link">&para;</a></h3>
+<h3 id="91-collateralized-lending-and-credit">9.1 Collateralized Lending and Credit</h3>
 <blockquote>
 <p>“Overcollateralized Loans: Borrowers deposit more value as collateral than the amount they borrow... Algorithmic Interest Rates: Variable rates that adjust automatically based on supply, demand, or utilization.”</p>
 </blockquote>
@@ -1118,7 +332,7 @@
 <li><strong>Overcollateralization</strong> ensures lenders remain secure against default.  </li>
 <li><strong>Algorithmic rates</strong> remove human bias, dynamically adjusting yield based on liquidity or risk.</li>
 </ul>
-<h3 id="92-dex-and-automated-market-maker-amm-models">9.2 DEX and Automated Market Maker (AMM) Models<a class="headerlink" href="#92-dex-and-automated-market-maker-amm-models" title="Permanent link">&para;</a></h3>
+<h3 id="92-dex-and-automated-market-maker-amm-models">9.2 DEX and Automated Market Maker (AMM) Models</h3>
 <blockquote>
 <p>“Direct, Permissionless Trading: Anyone can create or trade new asset pairs without centralized listing requirements. Pricing Curves and Liquidity Pools...”</p>
 </blockquote>
@@ -1126,7 +340,7 @@
 <li><strong>AMMs</strong> (like Uniswap or curve analogs) let users become liquidity providers, earning fees.  </li>
 <li><strong>No gatekeepers</strong> to list tokens, fostering open access.</li>
 </ul>
-<h3 id="93-flash-liquidity-and-instant-rebalancing">9.3 Flash Liquidity and Instant Rebalancing<a class="headerlink" href="#93-flash-liquidity-and-instant-rebalancing" title="Permanent link">&para;</a></h3>
+<h3 id="93-flash-liquidity-and-instant-rebalancing">9.3 Flash Liquidity and Instant Rebalancing</h3>
 <blockquote>
 <p>“Flash Loans/Swaps: Allow borrowing large sums instantly as long as they are repaid within the same transaction, enabling rapid arbitrage or refinancing... Removes credit checks or prior deposits.”</p>
 </blockquote>
@@ -1135,7 +349,7 @@
 <li><strong>Opportunities</strong> for advanced arbitrage or cross-platform rebalancing.  </li>
 <li><strong>Accessibility</strong> to large capital for short durations, democratizing sophisticated strategies once exclusive to big finance.</li>
 </ul>
-<h3 id="94-synthetic-assets-and-stablecoins">9.4 Synthetic Assets and Stablecoins<a class="headerlink" href="#94-synthetic-assets-and-stablecoins" title="Permanent link">&para;</a></h3>
+<h3 id="94-synthetic-assets-and-stablecoins">9.4 Synthetic Assets and Stablecoins</h3>
 <blockquote>
 <p>“On-Chain Price Pegging: Use of oracles or collateralization to maintain a token’s value against another asset (e.g., pegging to fiat). Overcollateralized Debts... Self-Custody...”</p>
 </blockquote>
@@ -1143,12 +357,12 @@
 <li><strong>Stablecoins</strong> mitigate volatility by pegging tokens to external assets.  </li>
 <li><strong>Self-custody</strong> means users hold their own keys, controlling stablecoins or synthetic derivatives without relying on banks.</li>
 </ul>
-<h3 id="95-peer-to-peer-derivatives">9.5 Peer-to-Peer Derivatives<a class="headerlink" href="#95-peer-to-peer-derivatives" title="Permanent link">&para;</a></h3>
+<h3 id="95-peer-to-peer-derivatives">9.5 Peer-to-Peer Derivatives</h3>
 <blockquote>
 <p>“Smart Contract Execution... Automated Liquidation ensures solvency... Open Participation: Anyone can create or trade derivatives.”</p>
 </blockquote>
 <p><strong>Derivatives</strong> (futures, options, perpetuals) offer advanced hedging or speculation tools—<strong>no broker</strong> needed. Contracts handle margin calls or liquidation automatically, maintaining a trust-minimized environment.</p>
-<h3 id="96-tokenization-of-assets">9.6 Tokenization of Assets<a class="headerlink" href="#96-tokenization-of-assets" title="Permanent link">&para;</a></h3>
+<h3 id="96-tokenization-of-assets">9.6 Tokenization of Assets</h3>
 <blockquote>
 <p>“Bundling or Fractionalizing: Either grouping on-chain assets into one composite token or representing real-world assets in a token format... Non-Fungible Representation...”</p>
 </blockquote>
@@ -1158,7 +372,7 @@
 <li><strong>Composite tokens</strong> bundling multiple tokens.  </li>
 <li><strong>Fractional ownership</strong> of real-world or intangible assets, broadening access to investments historically reserved for large investors.</li>
 </ul>
-<h3 id="97-liquidity-and-capital-efficiency">9.7 Liquidity and Capital Efficiency<a class="headerlink" href="#97-liquidity-and-capital-efficiency" title="Permanent link">&para;</a></h3>
+<h3 id="97-liquidity-and-capital-efficiency">9.7 Liquidity and Capital Efficiency</h3>
 <blockquote>
 <p>“Participants Supply Assets: Earn interest or fees by making them available in lending pools, AMMs, or derivatives. Dynamic Collateral: Assets can be reused in multiple layers.”</p>
 </blockquote>
@@ -1167,12 +381,12 @@
 <li><strong>Liquidity providers</strong> earn yield from fees or interest.  </li>
 <li><strong>Composability</strong>: interest-bearing tokens can be used as collateral in other protocols, multiplying capital usage.</li>
 </ul>
-<h3 id="98-dao-driven-governance">9.8 DAO-Driven Governance<a class="headerlink" href="#98-dao-driven-governance" title="Permanent link">&para;</a></h3>
+<h3 id="98-dao-driven-governance">9.8 DAO-Driven Governance</h3>
 <blockquote>
 <p>“Parameter Adjustments: Community or token holders decide on interest rates, collateral factors... Votes recorded on the blockchain for traceability and accountability.”</p>
 </blockquote>
 <p><strong>Decentralized Autonomous Organizations (DAOs)</strong> oversee protocol evolution. Governance tokens align stakeholder incentives: those who own the governance token have a direct say in updates, fee structures, or expansions.</p>
-<h3 id="99-security-transparency-and-automation">9.9 Security, Transparency, and Automation<a class="headerlink" href="#99-security-transparency-and-automation" title="Permanent link">&para;</a></h3>
+<h3 id="99-security-transparency-and-automation">9.9 Security, Transparency, and Automation</h3>
 <blockquote>
 <p>“On-Chain Visibility: Collateral ratios, liquidity levels, system parameters are publicly auditable. Automated, Code-Defined Rules: Contracts enforce margin requirements... few restrictions beyond the contract’s code.”</p>
 </blockquote>
@@ -1183,7 +397,7 @@
 <li><strong>Automated</strong> processes: removing (or reducing) reliance on discretionary third-party oversight.</li>
 </ul>
 <hr />
-<h2 id="10-conclusion">10. Conclusion<a class="headerlink" href="#10-conclusion" title="Permanent link">&para;</a></h2>
+<h2 id="10-conclusion">10. Conclusion</h2>
 <p><strong>Decentralized Finance</strong> (DeFi) and <strong>Contractual Money</strong> revolve around <strong>self-sovereign</strong>, code-defined systems that supplant or augment traditional finance. This new strand emphasizes:</p>
 <ol>
 <li><strong>Peer-to-Peer</strong> structures: no centralized bottlenecks, users directly manage “boxes” or contract states.  </li>
@@ -1195,58 +409,82 @@
 <blockquote>
 <p>“Ergo presents a flexible, self-sovereign, and community-oriented approach to digital money and finance, wherein code-defined contracts (‘contractual money’) enable diverse, parallel, and peer-driven financial systems—even in a ‘post-central-bank’ world.”</p>
 </blockquote>
-<p>DeFi stands as the <strong>practical realization</strong> of these ideals: the creation of on-chain lending, trading, and subcurrency ecosystems that are <strong>free, open source, and unstoppable</strong>, building toward a vision of finance “for the people,” <strong>beyond</strong> the constraints (and potential failures) of centralized institutions. </p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+<p>DeFi stands as the <strong>practical realization</strong> of these ideals: the creation of on-chain lending, trading, and subcurrency ecosystems that are <strong>free, open source, and unstoppable</strong>, building toward a vision of finance “for the people,” <strong>beyond</strong> the constraints (and potential failures) of centralized institutions. </p></div>
             </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
-      
-    
-  </body>
+
+    </body>
 </html>
